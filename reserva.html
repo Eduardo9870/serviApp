@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+
+    <div class="container">
+        <h2>Reservas:</h2>
+        <form>
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Identificación del cliente:</label>
+                <input type="text" class="form-control" id="cliente" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="servicio" class="form-label">Servicio a reservar:</label>
+                <select class="form-select" id="servicio" required>
+                    <option value="">Seleccionar servicio</option>
+                    <option value="hora">Por hora o trabajo</option>
+                    <option value="terreno">En terreno</option>
+                    <option value="ejecucion">Ejecución del trabajo</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="servicio" class="form-label">Servicios:</label>
+                <select class="form-select" id="servicio" required>
+                    <option value="">Seleccionar servicio</option>
+                    <option value="lavado">Lavado de automobiles</option>
+                    <option value="mantenimento">Mantenimiento de automobiles</option>
+                    <option value="reparación">Reparación de bicicletas</option>
+                    <option value="reparacióng">Reparación general</option>
+                    <option value="limpieza">Limpieza de hogar</option>
+                    <option value="muebles">Limpieza muebles</option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha:</label>
+                <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <div class="mb-3">
+                <label for="hora" class="form-label">Hora:</label>
+                <input type="time" class="form-control" id="hora" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Reservar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- End Example Code -->
+</body>
+
+</html>
